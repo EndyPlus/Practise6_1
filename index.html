@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Task1</title>
+    <script>
+      function changeBg() {
+        let colorSelect = document.getElementById("selected-color");
+        let selectedColor = colorSelect.value;
+
+        document.body.style.backgroundColor = selectedColor;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Кольори фону</h1>
+    <label for="selected-color">Оберіть колір:</label>
+    <select id="selected-color" onchange="changeBg()">
+      <option value="blue">Синій</option>
+      <option value="green">Зелений</option>
+      <option value="red">Червоний</option>
+    </select>
+  </body>
+</html>
